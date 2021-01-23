@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  user-select:none;
 }
 nav{
   position: fixed;
@@ -24,12 +25,14 @@ nav .wrapper{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 110;
+
 }
+
 .wrapper .logo a{
   color: #fff;
-  /* font-size: 30px;
-  font-weight: 600; */
+  font-size: 25px;
+  font-weight: 600;
+  user-select:none;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -37,7 +40,7 @@ nav .wrapper{
 
 .wrapper .nav-links{
   display: inline-flex;
-  z-index: 110;
+
 }
 .nav-links li{
   list-style: none;
@@ -53,10 +56,11 @@ nav .wrapper{
   padding: 9px 15px;
   border-radius: 5px;
   transition: all 0.3s ease;
-  z-index: 110;
+
 }
 .nav-links li a:hover{
   /* background: #3A3B3C; */
+  padding-bottom: 10px;
   border-bottom: 1px #fff solid;
 }
 .nav-links .mobile-item{
@@ -70,7 +74,7 @@ nav .wrapper{
   top: 85px;
   opacity: 0;
   visibility: hidden;
-  z-index: 110;
+
   box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
 .nav-links li:hover .drop-menu,
@@ -80,7 +84,7 @@ nav .wrapper{
   opacity: 1;
   z-index: 200;
   visibility: visible;
-  z-index: 110;
+
 }
 .drop-menu li a{
   width: 100%;
@@ -88,7 +92,7 @@ nav .wrapper{
   padding: 0 0 0 15px;
   font-weight: 400;
   border-radius: 0px;
-  z-index: 110;
+
 }
 .mega-box{
   position: absolute;
@@ -98,7 +102,7 @@ nav .wrapper{
   top: 85px;
   opacity: 0;
   visibility: hidden;
-  z-index: 110;
+
 }
 .mega-box .content{
   /* background: #242526; */
@@ -108,7 +112,7 @@ nav .wrapper{
   width: 100%;
   justify-content: space-between;
   box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-  z-index: 110;
+
 }
 .mega-box .content .row{
   width: calc(25% - 30px);
@@ -126,7 +130,7 @@ nav .wrapper{
 }
 .content .row .mega-links{
   margin-left: -40px;
-  z-index: 110;
+
   border-left: 1px solid rgba(255,255,255,0.09);
 }
 .row .mega-links li{
@@ -320,12 +324,12 @@ nav input{
     font-weight: 600;
     color: #202020;
   }
-  footer{
+  /* footer{
     position: fixed;
     bottom: 0px;
     width: 100%;
     background: #111;
-  }
+  } */
   .main-content{
     display: flex;
   }
@@ -457,10 +461,10 @@ nav input{
     text-decoration: underline;
   }
   @media screen and (max-width: 900px) {
-    footer{
+    /* footer{
       position: relative;
       bottom: 0px;
-    }
+    } */
     .main-content{
       flex-wrap: wrap;
       flex-direction: column;

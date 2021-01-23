@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 :root {
-  --primary-color: #047aed;
+  /* --primary-color: #047aed; */
+  --primary-color: #002240;
   --secondary-color: #1c3fa8;
   --dark-color: #002240;
   --dark-color-new:#051b2e;
@@ -90,7 +91,7 @@ pre {
   background-color: var(--dark-color);
  
   color: #fff;
-  position: absolute;
+  position: relative;
 }
 
 .showcase h1 {
@@ -278,10 +279,118 @@ textarea{
 }
 
 /* Footer */
-.footer .social a {
-  margin: 0 10px;
+
+.footer .social
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  /* position: absolute; */
+  /* z-index: 10;
+  bottom: 20px;
+  */
+}
+.footer .social li
+{
+  list-style: none;
+}
+.footer .social li a
+{
+  display: inline-block;
+  /* margin: 0 20px; */
+
+  margin-right: 20px; 
+  /* filter: invert(1); */
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+.footer .social li a:hover
+{
+  transform: scale(0.9) translateY(-15px);
 }
 
+
+.showcase-text h2
+  {
+    font-size: 2em;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+    user-select:none;border:2px solid
+  }
+  .showcase-text h3
+  {
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+    user-select:none;
+  }
+  .showcase-text p
+  {
+    font-size: 1em;
+    color: #fff;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+  }
+  .showcase-text a
+  {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #111;
+    letter-spacing: 2px;
+    transition: 0.2s;
+  }
+  .showcase-text a:hover
+  {
+    letter-spacing: 6px;
+  }
+#theme-options-wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.theme-dot{
+	height: 30px;
+	width: 30px;
+	background-color: black;
+	border-radius: 50%;
+
+	margin: 5px;
+	border:2px solid var(--themeDotBorder);
+
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+	cursor: pointer;
+}
+
+#light-mode{
+	background-color: #fff;
+}
+
+#blue-mode{
+	background-color: #192734;
+}
+
+#green-mode{
+	background-color: #78866b;
+}
+
+#purple-mode{
+	background-color: #7E4C74;
+}
 /* Animations */
 @keyframes slideInFromLeft {
   0% {
@@ -335,7 +444,7 @@ textarea{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-
+  
   .showcase {
     height: auto;
   }
